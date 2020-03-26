@@ -9,6 +9,8 @@ df = read_excel("Weight.xlsx")
 df %>%
   ggplot(aes(x = Date, y = `Weight (kg)`)) +
   geom_point() + 
-  geom_line() + 
-  theme_minimal()
+  geom_smooth() + 
+  theme_minimal() +
+  ylim(60, 80)
+
 
