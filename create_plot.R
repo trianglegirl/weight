@@ -10,7 +10,9 @@ df %>%
   ggplot(aes(x = Date, y = `Weight (kg)`)) +
   geom_point() + 
   geom_smooth() + 
+  geom_hline(yintercept = 65, colour = "red", lty = 2) +
   theme_minimal() +
-  ylim(60, 80)
+  ylim(60, 80) 
+
 
 
